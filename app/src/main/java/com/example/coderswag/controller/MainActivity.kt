@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.ListView
+import android.widget.Toast
 
 import com.example.coderswag.R
 import com.example.coderswag.adapters.CategoryAdapter
@@ -17,5 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         adapter =CategoryAdapter(this,DataService.categories)
         findViewById<ListView>(R.id.categoryListView).adapter=adapter
+
+
     }
 }
