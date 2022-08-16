@@ -13,9 +13,7 @@ import com.example.coderswag.R
 import com.example.coderswag.model.Category
 import org.w3c.dom.Text
 
-class CategoryAdapter(context: Context,categories:List<Category>): BaseAdapter() {
-    val context=context
-    val categories=categories
+class CategoryAdapter(val context: Context, val categories: List<Category>): BaseAdapter() {
     override fun getCount(): Int {
         return categories.count()
     }
